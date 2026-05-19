@@ -74,15 +74,3 @@ jobs:
             artifacts/TrueNAS-SCALE-**.update.sha256
             artifacts/extensions/nvidia.raw
             artifacts/manifest.json
-
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: "${{ steps.version.outputs.VERSION }}"
-          body: "Automated release of TrueNAS SCALE ${{ steps.train.outputs.TRAIN }} ${{ steps.version.outputs.VERSION }}"
-          token: ${{ secrets.TOKEN }}
-          files: |
-            artifacts/TrueNAS-SCALE-**.update
-            artifacts/TrueNAS-SCALE-**.update.sha256
-            artifacts/extensions/nvidia.raw
-            artifacts/manifest.json
