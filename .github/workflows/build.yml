@@ -36,6 +36,7 @@ jobs:
         run: |
           cd scale-build
           git apply ../patches/0001-remove-nvidia-open-source-driver.patch
+          git apply ../patches/0002-nvida_driver_version
 
       - name: Build Packages
         run: |
