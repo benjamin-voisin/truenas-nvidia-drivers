@@ -1,0 +1,13 @@
+diff --git a/conf/build.manifest b/conf/build.manifest
+index e9bfcd6..33e69ed 100644
+--- a/conf/build.manifest
++++ b/conf/build.manifest
+@@ -745,7 +745,7 @@ sources:
+ ############################################################################
+ extensions:
+   nvidia:
+-    current: "590.44.01"
++    current: "580.159.04"
+ 
+ # External packages from various sources (GitHub releases, assets.sys.truenas.net)
+ ############################################################################
